@@ -26,7 +26,7 @@ class Openai_model:
         
 
     def chat(self,question:str):
-        template="""question:{question}\n以下列表信息供你参考,如果你觉得这些信息对回答问题没有帮助，你可以忽视它：\n info:{info}"""
+        template="""question:{question}\n以下列表信息供你参考,如果你觉得它对回答问题没有帮助，你可以忽视它：\n info:{info}"""
         info=self.db.query(question,self.embedding_model,1)
 
         prompt=PromptTemplate(template=template,input_variables=["question","info"]).format(question=question,info=info)
