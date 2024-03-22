@@ -26,7 +26,14 @@ class Openai_model:
         
 
     def chat(self,question:str):
-        template="""question:{question}\n以下列表信息供你参考,如果你觉得它对回答问题没有帮助，你可以忽视它：\n info:{info}"""
+        template="""使用以上下文来回答用户的问题。如果你不知道答案，就说你不知道。总是使用中文回答。
+        问题: {question}
+        可参考的上下文：
+        ···
+        {info}
+        ···
+        如果给定的上下文无法让你做出回答，请回答数据库中没有这个内容，你不知道。
+        有用的回答:"""
         info=self.db.query(question,self.embedding_model,1)
 
         prompt=PromptTemplate(template=template,input_variables=["question","info"]).format(question=question,info=info)
