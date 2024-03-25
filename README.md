@@ -23,7 +23,7 @@ RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中�
 
 最终启动demo结果如下:
 <div align="center">
-    <img src="./image/微信图片_20240322110029.png" alt="RAG" width="100%">
+    <img src="../tinyRAG/image/259286ef119a08430ddc882454e38a1.png" alt="RAG" width="100%">
 </div>
 
 
