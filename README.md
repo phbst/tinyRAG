@@ -35,8 +35,9 @@ RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中�
 ### 2. 防止关键信息被切分开
 
 
-
-
+# extra
+ 
+### 中文文本嵌入使用ZhipuEmbedding,英文可以使用Openai,Huggingface
 
 
 
@@ -168,3 +169,4 @@ class BaseModel:
 | Retrieval-Augmented Generation for Large Language Models: A Survey | [paper](https://arxiv.org/abs/2312.10997) |
 | Learning to Filter Context for Retrieval-Augmented Generation | [paper](http://arxiv.org/abs/2311.08377)  |
 | In-Context Retrieval-Augmented Language Models               | [paper](https://arxiv.org/abs/2302.00083) |
+
