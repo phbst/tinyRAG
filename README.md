@@ -20,28 +20,31 @@ RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中�
 
 3. 生成 — 以检索到的上下文为条件，生成问题的回答。
 
+# 项目结构
+```
+tinyRAG
+├─ build.ipynb
+├─ component
+│  ├─ chain.py
+│  ├─ databases.py
+│  ├─ data_chunker.py
+│  ├─ embedding.py
+│  └─ llms.py
+├─ data
+│  ├─ dpcq.txt
+│  ├─ README.md
+│  └─ 中华人民共和国消费者权益保护法.pdf
+├─ db
+│  ├─ doecment.json
+│  └─ vectors.json
+├─ image
+│  └─ 5386440326a2c9c5a06b5758484d375.png
+├─ push.bat
+├─ README.md
+├─ requirements.txt
+└─ webdemo_by_gradio.ipynb
 
-最终启动demo结果如下:
-<div align="center">
-    <img src="./image/5386440326a2c9c5a06b5758484d375.png" alt="RAG" width="100%">
-</div>
-
-
-
-# 思考：
-    中华人民共和国消费者权益保护法的目录回答其实是不全的，应该是切分数据的问题，可以把每一块的文本设置得更长，且相邻块之间的重叠覆盖范围更大
-    
-1. 避免关键信息不能完整被包含
-2. 防止关键信息被切分开
-
-
-# extra
- 
-中文文本嵌入使用ZhipuEmbedding,英文可以使用Openai,Huggingface
-
----
-
-
+```
 # QuickStrat
 
 安装依赖，需要 Python 3.10 以上版本。
@@ -91,8 +94,27 @@ print(result)
 
 
 # 实现细节
+参考blog: https://zhuanlan.zhihu.com/p/688842148
+
+# 最终启动demo结果如下:
+<div align="center">
+    <img src="./image/5386440326a2c9c5a06b5758484d375.png" alt="RAG" width="100%">
+</div>
 
 
+
+# 思考：
+    中华人民共和国消费者权益保护法的目录回答其实是不全的，应该是切分数据的问题，可以把每一块的文本设置得更长，且相邻块之间的重叠覆盖范围更大
+    
+1. 避免关键信息不能完整被包含
+2. 防止关键信息被切分开
+
+
+# extra
+ 
+中文文本嵌入使用ZhipuEmbedding,英文可以使用Openai,Huggingface
+
+---
 
 
 # 参考文献
@@ -103,4 +125,5 @@ print(result)
 | Retrieval-Augmented Generation for Large Language Models: A Survey | [paper](https://arxiv.org/abs/2312.10997) |
 | Learning to Filter Context for Retrieval-Augmented Generation | [paper](http://arxiv.org/abs/2311.08377)  |
 | In-Context Retrieval-Augmented Language Models               | [paper](https://arxiv.org/abs/2302.00083) |
+
 
