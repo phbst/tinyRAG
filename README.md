@@ -66,6 +66,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import PyPDF2
 
 ```
+建立数据库
 ```python
 # 建立数据库
 filter=ReadFile('./data')
