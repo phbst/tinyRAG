@@ -23,7 +23,7 @@ RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中�
 
 最终启动demo结果如下:
 <div align="center">
-    <img src="../tinyRAG/image/259286ef119a08430ddc882454e38a1.png" alt="RAG" width="100%">
+    <img src="./image/5386440326a2c9c5a06b5758484d375.png" alt="RAG" width="100%">
 </div>
 
 
