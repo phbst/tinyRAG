@@ -1,6 +1,6 @@
 
 <p align="center" style="font-size:20px">
-    <br> 项目分析与代码解释 | <a href="README-optimazing.md" >项目后续优化方案</a>
+    <br> 👋项目分析与代码解释👋  | <a href="README-optimazing.md" >项目后续优化方案</a>
 </p>
 <br>
 <hr>

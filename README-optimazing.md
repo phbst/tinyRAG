@@ -1,5 +1,5 @@
 <p align="center" style="font-size:20px">
-    <br>  <a href="README.md" >项目分析与代码解释</a> |项目后续优化方案
+    <br>  <a href="README.md" >项目分析与代码解释</a>  | 👋项目后续优化方案👋
 </p>
 <br>
 
