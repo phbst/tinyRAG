@@ -1,4 +1,5 @@
 @echo off
 git add .
-git commit -m "TinyRAG"
+git commit -m "Rag-optimazing"
 git push
+

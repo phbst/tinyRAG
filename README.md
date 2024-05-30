@@ -1,5 +1,11 @@
-# 项目于优化阶段，目前只是一个最小的框架，后续持续更新迭代，直至部署于生产环境
 
+<p align="center" style="font-size:20px">
+    <br> 项目分析与代码解释 | <a href="README-optimazing.md" >项目后续优化方案</a>
+</p>
+<br>
+<hr>
+
+# 项目于优化阶段，目前只是一个最小的框架，后续持续更新迭代，直至部署于生产环境
 # Hands on TinyRAG
 
 ## 什么是RAG？
