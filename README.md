@@ -76,7 +76,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import PyPDF2
 
 ```
-建立数据库
+构建向量数据库
 ```python
 # 建立数据库
 filter=ReadFile('./data')
@@ -87,7 +87,7 @@ Vectors=database.get_vector(embedding_model)
 database.persist()
 ```
 
-如果有数据库那就按照如下代码：
+构建向量数据库后，加载数据库：
 ```python
 # 将向量和文档内容保存到db目录下，下次再用就可以直接加载本地的数据库
 #加载向量数据库
