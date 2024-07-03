@@ -24,7 +24,7 @@ class HFembedding:
         return self.embedding.embed_query(content)
 
 #对两个字符串求相似度，使用embedding模型进行编码，再使用编码后的向量进行余弦相似度求值 
-    def compare(self, text1: str, temxt2: str):
+    def compare(self, text1: str, text2: str):
         embed1=self.embedding.embed_query(text1) 
         embed2=self.embedding.embed_query(text2)
         return np.dot(embed1, embed2) / (np.linalg.norm(embed1) * np.linalg.norm(embed2))
